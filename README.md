@@ -70,8 +70,8 @@ Copy your venue photos into `assets/images/` with the filenames listed above.
 ## ✏️ COMMON EDITS
 
 ### Change Phone Number
-Search and replace `971542347023` in `index.html` with your number.
-Also update the display text `+971 54 234 7023`.
+Search and replace `971501373678` in `index.html` with your number.
+Also update the display text `+971 50 137 3678`.
 
 ### Change Colors
 Open `css/style.css` — all colors are at the top in `:root {}`:
