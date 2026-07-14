@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════
-   TONIC RUSSIAN LOUNGE — MAIN SCRIPT
+   UPYARD ROOFTOP LOUNGE — MAIN SCRIPT
    Created by CKR STUDIOS
    ═══════════════════════════════════════════════ */
 
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const guests  = document.getElementById('rGuests').value;
       const occ     = document.getElementById('rOcc').value || 'N/A';
       const notes   = document.getElementById('rNotes').value || 'None';
-      const msg = `Hello Tonic Russian Lounge!%0A%0A*Reservation Request*%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Date:* ${date}%0A*Time:* ${time}%0A*Guests:* ${guests}%0A*Occasion:* ${encodeURIComponent(occ)}%0A*Notes:* ${encodeURIComponent(notes)}`;
+      const msg = `Hello Upyard Rooftop Lounge!%0A%0A*Reservation Request*%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Date:* ${date}%0A*Time:* ${time}%0A*Guests:* ${guests}%0A*Occasion:* ${encodeURIComponent(occ)}%0A*Notes:* ${encodeURIComponent(notes)}`;
       window.open(`https://wa.me/971501373678?text=${msg}`, '_blank');
       form.style.display = 'none';
       success.classList.add('show');

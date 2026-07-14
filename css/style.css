@@ -373,7 +373,7 @@ body:has(button:hover) .c-ring {
 ══════════════════════════════════════════ */
 #hero {
   position: relative;
-  height: calc(100vh - var(--total-top));
+  height: 100vh;
   min-height: 560px;
   display: flex;
   align-items: center;
@@ -403,8 +403,7 @@ body:has(button:hover) .c-ring {
   inset: 0;
   background:
     linear-gradient(to right, rgba(8, 6, 8, 0.82) 0%, rgba(8, 6, 8, 0.3) 55%, rgba(8, 6, 8, 0.1) 100%),
-    linear-gradient(to top, rgba(8, 6, 8, 0.9) 0%, transparent 60%),
-    radial-gradient(ellipse at 75% 50%, rgba(139, 0, 0, 0.28) 0%, transparent 60%);
+    linear-gradient(to top, rgba(8, 6, 8, 0.9) 0%, transparent 60%);
 }
 
 /* Animated scanline */
@@ -536,7 +535,7 @@ body:has(button:hover) .c-ring {
   flex-direction: column;
   justify-content: center;
   /* nudge down so content appears visually centered beneath fixed bars */
-  margin-top: 200px;
+  margin-top: 80px;
 }
 
 .hero-tag {
@@ -569,7 +568,7 @@ body:has(button:hover) .c-ring {
 
 .hero-h1 {
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 8vw, 6.5rem);
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
   line-height: 0.95;
   color: var(--ivory);
   margin-bottom: 12px;
@@ -2261,7 +2260,7 @@ footer {
   }
 
   .hero-h1 {
-    font-size: clamp(3rem, 14vw, 5.5rem);
+    font-size: clamp(2rem, 8vw, 3rem);
   }
 
   .hero-content {
