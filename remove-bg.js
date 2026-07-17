@@ -10,17 +10,17 @@ async function main() {
 
     console.log("Reading image:", inputPath);
     const buffer = fs.readFileSync(inputPath);
-    
+
     // Create a Blob from buffer as required by the library
     const blob = new Blob([buffer], { type: 'image/jpeg' });
-    
+
     console.log("Removing background (this may take a minute to download the model)...");
     const blobOutput = await removeBackground(blob);
-    
+
     console.log("Saving image to:", outputPath);
     const arrayBuffer = await blobOutput.arrayBuffer();
     fs.writeFileSync(outputPath, Buffer.from(arrayBuffer));
-    
+
     console.log("Success! Saved as logo.png");
   } catch (error) {
     console.error("Failed:", error);
