@@ -410,8 +410,16 @@
   <!-- ═══════════════════════════════════════
      MENU
 ════════════════════════════════════════ -->
-  <section id="menu-sec" aria-labelledby="menu-title">
-    <div class="menu-head reveal">
+  <section id="menu-sec" aria-labelledby="menu-title" style="position:relative; overflow:hidden; isolation:isolate;">
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-2; pointer-events:none;">
+      <source src="assets/videos/THE%20SELECTION.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Dark overlay to ensure text and buttons are perfectly visible -->
+    <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.7); z-index:-1; pointer-events:none;"></div>
+
+    <div class="menu-head reveal" style="position:relative; z-index:1;">
       <div class="s-eye" style="text-align:center;">THE SELECTION</div>
       <h2 class="s-title" style="text-align:center;" id="menu-title">Drink <span class="g">Like Royalty</span></h2>
       <p class="s-body" style="text-align:center; margin:0 auto;">From single malts aged decades to cocktails born in
