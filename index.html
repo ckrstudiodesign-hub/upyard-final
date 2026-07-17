@@ -7,6 +7,7 @@
 
   <!-- ═══ SEO META ═══ -->
   <title>Upyard Rooftop Lounge | Best Rooftop Lounge in Dubai</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <meta name="description"
     content="UPYARD Rooftop Lounge — Dubai's most immersive nightclub experience. Live DJ shows, belly dance performances, premium cocktails & spirits. Courtyard by Marriott Al Barsha, Dubai. Open 6PM nightly.">
   <meta name="keywords"
@@ -185,34 +186,41 @@
   <!-- ═══════════════════════════════════════
      HAPPY HOURS
 ════════════════════════════════════════ -->
-  <section id="happy-hours" aria-labelledby="happy-hours-title">
-    <div class="menu-head">
-      <div class="s-eye" style="text-align:center;">LIMITED TIME OFFER</div>
-      <h2 class="s-title" id="happy-hours-title" style="text-align:center;"><span class="hh-main">Happy Hour</span><br>
-        <span class="hh-time">6PM–10PM</span>
-      </h2>
-      <p class="s-body" style="text-align:center; margin:0 auto;">Enjoy select cocktails and table specials during our
-        extended happy hours.</p>
-    </div>
+  <section id="happy-hours" aria-labelledby="happy-hours-title" style="position:relative; overflow:hidden; padding: 20px 0;">
+    <video autoplay loop muted playsinline style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:-2; object-fit:cover;">
+      <source src="assets/videos/happy.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:-1;"></div>
+    
+    <div style="position:relative; z-index:1;">
+      <div class="menu-head">
+        <div class="s-eye" style="text-align:center;">LIMITED TIME OFFER</div>
+        <h2 class="s-title" id="happy-hours-title" style="text-align:center;"><span class="hh-main">Happy Hour</span><br>
+          <span class="hh-time">6PM–10PM</span>
+        </h2>
+        <p class="s-body" style="text-align:center; margin:0 auto; max-width:600px; padding-bottom: 5px;">Enjoy select cocktails and table specials during our
+          extended happy hours.</p>
+      </div>
 
-    <div class="happy-grid" style="display:flex; gap:18px; justify-content:center; flex-wrap:wrap; padding:24px 6%;">
-      <div class="happy-card" style="max-width:260px; text-align:center;">
-        <div class="hc-title" style="font-weight:700; margin-bottom:8px;">COCKTAILS</div>
-        <div class="hc-desc">Selected signature cocktails at special happy hour rates.</div>
+      <div class="happy-grid" style="display:flex; gap:18px; justify-content:center; flex-wrap:wrap; padding:10px 6%;">
+        <div class="happy-card" style="max-width:260px; text-align:center;">
+          <div class="hc-title" style="font-weight:700; margin-bottom:8px;">COCKTAILS</div>
+          <div class="hc-desc">Selected signature cocktails at special happy hour rates.</div>
+        </div>
+        <div class="happy-card" style="max-width:260px; text-align:center;">
+          <div class="hc-title" style="font-weight:700; margin-bottom:8px;">TABLE PACKAGES</div>
+          <div class="hc-desc">Early-booking packages and VIP upgrades available — enquire for details.</div>
+        </div>
+        <div class="happy-card" style="max-width:260px; text-align:center;">
+          <div class="hc-title" style="font-weight:700; margin-bottom:8px;">LIVE DJ SET</div>
+          <div class="hc-desc">Resident DJs keep the energy flowing through happy hour.</div>
+        </div>
       </div>
-      <div class="happy-card" style="max-width:260px; text-align:center;">
-        <div class="hc-title" style="font-weight:700; margin-bottom:8px;">TABLE PACKAGES</div>
-        <div class="hc-desc">Early-booking packages and VIP upgrades available — enquire for details.</div>
-      </div>
-      <div class="happy-card" style="max-width:260px; text-align:center;">
-        <div class="hc-title" style="font-weight:700; margin-bottom:8px;">LIVE DJ SET</div>
-        <div class="hc-desc">Resident DJs keep the energy flowing through happy hour.</div>
-      </div>
-    </div>
 
-    <div style="text-align:center; margin-top:18px;">
-      <a href="#menu-sec" class="btn-outline" target="_blank" rel="noopener">WHATSAPP FOR HAPPY HOUR
-        OFFERS</a>
+      <div style="text-align:center; margin-top:18px;">
+        <a href="#menu-sec" class="btn-outline" target="_blank" rel="noopener">WHATSAPP FOR HAPPY HOUR
+          OFFERS</a>
+      </div>
     </div>
   </section>
 
@@ -230,8 +238,9 @@
   <section id="about" aria-labelledby="about-title">
     <div class="about-visual reveal">
       <div class="about-main-img">
-        <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?q=80&w=800&auto=format&fit=crop" alt="Inside Upyard Rooftop Lounge — immersive interior with LED columns"
-          loading="lazy">
+        <video autoplay loop muted playsinline loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;" poster="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?q=80&w=800&auto=format&fit=crop">
+          <source src="assets/videos/OUR%20STORY.mp4" type="video/mp4">
+        </video>
         <div class="about-tag">EST. 2024 · DUBAI</div>
       </div>
       <div class="about-accent-box">
@@ -286,37 +295,37 @@
         g-item 2-7:       600×300px
     -->
       <div class="g-item" tabindex="0" role="button" aria-label="View image: The Stage">
-        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=800&auto=format&fit=crop" alt="Upyard DJ Stage with LED display" loading="lazy">
+        <img src="assets/pics/1.jpeg" alt="Upyard DJ Stage with LED display" loading="lazy">
         <span class="g-label">THE STAGE</span>
         <span class="zoom-icon">🔍</span>
       </div>
       <div class="g-item" tabindex="0" role="button" aria-label="View image: The Lounge">
-        <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=1200&auto=format&fit=crop" alt="Upyard Lounge interior with red seating" loading="lazy">
+        <img src="assets/pics/3.jpeg" alt="Upyard Lounge interior with red seating" loading="lazy">
         <span class="g-label">THE LOUNGE</span>
         <span class="zoom-icon">🔍</span>
       </div>
       <div class="g-item" tabindex="0" role="button" aria-label="View image: Explore The Upyard">
-        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1200&auto=format&fit=crop" alt="Explore The Upyard neon sign" loading="lazy">
+        <img src="assets/pics/5.jpeg" alt="Explore The Upyard neon sign" loading="lazy">
         <span class="g-label">THE VIBE</span>
         <span class="zoom-icon">🔍</span>
       </div>
       <div class="g-item" tabindex="0" role="button" aria-label="View image: Live Show">
-        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop" alt="Live performance dancers at Upyard" loading="lazy">
+        <img src="assets/pics/6.jpeg" alt="Live performance dancers at Upyard" loading="lazy">
         <span class="g-label">LIVE SHOWS</span>
         <span class="zoom-icon">🔍</span>
       </div>
       <div class="g-item" tabindex="0" role="button" aria-label="View image: The Bar">
-        <img src="https://images.unsplash.com/photo-1527169402691-feff5539e52c?q=80&w=800&auto=format&fit=crop" alt="Upyard bar cocktail setup" loading="lazy">
+        <img src="assets/pics/7.jpg" alt="Upyard bar cocktail setup" loading="lazy">
         <span class="g-label">THE BAR</span>
         <span class="zoom-icon">🔍</span>
       </div>
       <div class="g-item" tabindex="0" role="button" aria-label="View image: National Day">
-        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Upyard National Day celebration" loading="lazy">
+        <img src="assets/pics/rooftop-pool.jpg" alt="Upyard National Day celebration" loading="lazy">
         <span class="g-label">SPECIAL EVENTS</span>
         <span class="zoom-icon">🔍</span>
       </div>
       <div class="g-item" tabindex="0" role="button" aria-label="View image: The Entrance">
-        <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?q=80&w=800&auto=format&fit=crop" alt="Upyard Rooftop Lounge entrance sign" loading="lazy">
+        <img src="assets/pics/1.jpeg" alt="Upyard Rooftop Lounge entrance sign" loading="lazy">
         <span class="g-label">THE ENTRANCE</span>
         <span class="zoom-icon">🔍</span>
       </div>
@@ -336,123 +345,63 @@
 ════════════════════════════════════════ -->
   <section id="experience" aria-labelledby="exp-title">
     <div class="reveal" style="max-width:680px; margin-bottom:52px;">
-      <div class="s-eye">WHAT WE OFFER</div>
-      <h2 class="s-title" id="exp-title">The Full <span class="g">Upyard</span> Experience</h2>
-    </div>
-
-    <div class="exp-tabs reveal" role="tablist">
-      <button class="exp-tab active" data-panel="nightlife" role="tab" aria-selected="true">NIGHTLIFE</button>
-      <button class="exp-tab" data-panel="bar" role="tab" aria-selected="false">THE BAR</button>
-      <button class="exp-tab" data-panel="shows" role="tab" aria-selected="false">LIVE SHOWS</button>
-      <button class="exp-tab" data-panel="vip" role="tab" aria-selected="false">VIP & EVENTS</button>
+      <div class="s-eye">PREMIUM SHISHA</div>
+      <h2 class="s-title" id="exp-title">The Best <span class="g">Shisha</span> Experience</h2>
     </div>
 
     <div class="exp-panels reveal d1">
-      <div class="exp-panel active" id="panel-nightlife" role="tabpanel">
-        <div class="exp-img">
-          <img
-            src="https://images.unsplash.com/photo-1496337589254-7e19d01cec44?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="DJ setup at Upyard" loading="lazy">
+      <div class="exp-panel active" id="panel-shisha">
+        <div class="exp-img" style="aspect-ratio: 9/16; height: auto; max-width: 320px; max-height: 560px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <video autoplay loop muted playsinline loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" poster="https://images.unsplash.com/photo-1510006766946-b676fde2ba4c?q=80&w=800&auto=format&fit=crop">
+            <source src="assets/videos/shisha.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="exp-list">
           <div class="exp-item">
-            <div class="exp-item-t">PIONEER DJ SETUP</div>
-            <div class="exp-item-d">Professional Pioneer DJ & AlphaTheta controllers. Resident DJs blend Arabic,
-              Rooftop, international and EDM for maximum energy every single night.</div>
-            <span class="exp-tag">EVERY NIGHT</span>
+            <div class="exp-item-t">PREMIUM SHISHA</div>
+            <div class="exp-item-d">Experience our masterfully crafted shisha, using the finest quality tobacco and expertly managed coals for a smooth, flavorful session.</div>
+            <span class="exp-tag">EXPERTLY CRAFTED</span>
           </div>
           <div class="exp-item">
-            <div class="exp-item-t">IMMERSIVE LED WORLD</div>
-            <div class="exp-item-d">Full LED walls, illuminated columns and moving light rigs create a visual spectacle
-              unlike any other venue in Dubai.</div>
-            <span class="exp-tag">SIGNATURE FEATURE</span>
+            <div class="exp-item-t">POPULAR FLAVORS</div>
+            <div class="exp-item-d">Double Apple, Mint, Grape, Lemon Mint, Blue Mist, and Watermelon. Ask about our special house mixes for a unique flavor journey.</div>
+            <span class="exp-tag">WIDE SELECTION</span>
           </div>
           <div class="exp-item">
-            <div class="exp-item-t">THE DANCE FLOOR</div>
-            <div class="exp-item-d">A dedicated stage and floor where guests and performers unite. The energy builds
-              from opening to the very last track.</div>
-            <span class="exp-tag">7PM – LATE</span>
+            <div class="exp-item-t">CHILL VIBES</div>
+            <div class="exp-item-d">Relax on our comfortable rooftop lounge with a premium shisha, good company, and stunning views of the Dubai skyline.</div>
+            <span class="exp-tag">DAILY</span>
           </div>
         </div>
       </div>
 
-      <div class="exp-panel" id="panel-bar" role="tabpanel">
-        <div class="exp-img">
-          <img
-            src="https://images.unsplash.com/photo-1575444758702-4a6b9222336e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Bar at Upyard" loading="lazy">
-        </div>
+      <!-- COCKTAIL SECTION -->
+      <div class="reveal" style="max-width:680px; margin-top: 80px; margin-bottom:52px;">
+        <div class="s-eye">SIGNATURE COCKTAILS</div>
+        <h2 class="s-title">The Best <span class="g">Cocktail</span> Experience</h2>
+      </div>
+      <div class="exp-panel active" id="panel-cocktails">
         <div class="exp-list">
-          <div class="exp-item">
-            <div class="exp-item-t">PREMIUM SPIRITS</div>
-            <div class="exp-item-d">From Macallan 12YR to Beluga Vodka, Hennessy XO to Patrón — our selection rivals the
-              finest bars in the world.</div>
-            <span class="exp-tag">100+ LABELS</span>
-          </div>
           <div class="exp-item">
             <div class="exp-item-t">SIGNATURE COCKTAILS</div>
-            <div class="exp-item-d">Old Fashioneds, Negronis, Signature Cocktailss and classic party cocktails. Our bartenders
-              are artists with a shaker.</div>
-            <span class="exp-tag"></span>
+            <div class="exp-item-d">Discover our exclusive range of signature cocktails, crafted by expert mixologists using premium spirits and fresh, exotic ingredients.</div>
+            <span class="exp-tag">EXPERTLY MIXED</span>
           </div>
           <div class="exp-item">
-            <div class="exp-item-t">CHAMPAGNE SERVICE</div>
-            <div class="exp-item-d">Dom Pérignon and Moët Chandon table service with sparkler procession — make your
-              celebration unforgettable.</div>
-            <span class="exp-tag">TABLE SERVICE</span>
+            <div class="exp-item-t">CLASSIC FAVORITES</div>
+            <div class="exp-item-d">From perfectly balanced Old Fashioneds to refreshing Mojitos, enjoy timeless classics made with absolute precision.</div>
+            <span class="exp-tag">TIMELESS</span>
+          </div>
+          <div class="exp-item">
+            <div class="exp-item-t">ELEVATED NIGHTS</div>
+            <div class="exp-item-d">Pair your drinks with the perfect ambiance, breathtaking views, and an unforgettable energy that lasts all night long.</div>
+            <span class="exp-tag">NIGHTLIFE</span>
           </div>
         </div>
-      </div>
-
-      <div class="exp-panel" id="panel-shows" role="tabpanel">
-        <div class="exp-img">
-          <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1200&auto=format&fit=crop" alt="Live show at Upyard" loading="lazy">
-        </div>
-        <div class="exp-list">
-          <div class="exp-item">
-            <div class="exp-item-t">BELLY DANCE</div>
-            <div class="exp-item-d">Authentic belly dance performances that weave through the crowd, bringing the art
-              form to life in spectacular style.</div>
-            <span class="exp-tag">WEEKLY</span>
-          </div>
-          <div class="exp-item">
-            <div class="exp-item-t">CABARET DANCERS</div>
-            <div class="exp-item-d">Choreographed shows with laser effects, theatrical costumes and stage presence that
-              commands the entire room.</div>
-            <span class="exp-tag">FRI &amp; SAT</span>
-          </div>
-          <div class="exp-item">
-            <div class="exp-item-t">SPECIAL NIGHTS</div>
-            <div class="exp-item-d">National Day celebrations, themed evenings and exclusive guest performer events.
-              Follow our Instagram for announcements.</div>
-            <span class="exp-tag">MONTHLY</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="exp-panel" id="panel-vip" role="tabpanel">
-        <div class="exp-img">
-          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop" alt="VIP table at Upyard" loading="lazy">
-        </div>
-        <div class="exp-list">
-          <div class="exp-item">
-            <div class="exp-item-t">VIP TABLE RESERVATIONS</div>
-            <div class="exp-item-d">Priority seating, dedicated service, bottle packages and premium setups. Your table
-              awaits — book online or via WhatsApp.</div>
-            <span class="exp-tag">RECOMMENDED</span>
-          </div>
-          <div class="exp-item">
-            <div class="exp-item-t">PRIVATE EVENTS</div>
-            <div class="exp-item-d">Birthdays, corporate events, milestone celebrations — Upyard transforms into your
-              private stage for any occasion.</div>
-            <span class="exp-tag">ENQUIRE</span>
-          </div>
-          <div class="exp-item">
-            <div class="exp-item-t">BIRTHDAY PACKAGES</div>
-            <div class="exp-item-d">Sparkler champagne procession, dedicated DJ shoutout and a complimentary birthday
-              cake for the guest of honour.</div>
-            <span class="exp-tag">CONTACT US</span>
-          </div>
+        <div class="exp-img" style="aspect-ratio: 9/16; height: auto; max-width: 320px; max-height: 560px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <video autoplay loop muted playsinline loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" poster="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800&auto=format&fit=crop">
+            <source src="assets/videos/cocktail.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -653,8 +602,19 @@
   <!-- ═══════════════════════════════════════
      REVIEWS
 ════════════════════════════════════════ -->
-  <section id="reviews" aria-labelledby="reviews-title">
-    <div class="reveal" style="max-width:600px; margin:0 auto; text-align:center;">
+  <section id="reviews" aria-labelledby="reviews-title" style="position:relative; overflow:hidden; isolation:isolate;">
+    <!-- Floating Background Videos -->
+    <video autoplay loop muted playsinline style="position:absolute; top:-5%; left:-5%; width:600px; max-width:60vw; height:auto; z-index:-2; opacity:0.7; border-radius:40px; transform: rotate(-6deg); filter: blur(2px); pointer-events:none;">
+      <source src="assets/videos/testimonials%201.mp4" type="video/mp4">
+    </video>
+    <video autoplay loop muted playsinline style="position:absolute; bottom:-5%; right:-5%; width:600px; max-width:60vw; height:auto; z-index:-2; opacity:0.7; border-radius:40px; transform: rotate(6deg); filter: blur(2px); pointer-events:none;">
+      <source src="assets/videos/testimonials%202.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Dark overlay to guarantee text readability -->
+    <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.6); z-index:-1; pointer-events:none;"></div>
+
+    <div class="reveal" style="max-width:600px; margin:0 auto; text-align:center; position:relative; z-index:1;">
       <div class="s-eye" style="text-align:center;">GUEST VOICES</div>
       <h2 class="s-title" style="text-align:center;" id="reviews-title">What They <span class="g">Say</span></h2>
     </div>
@@ -746,8 +706,7 @@
           <li><a href="#menu-sec" target="_blank" rel="noopener">WhatsApp</a></li>
           <li><a href="https://www.instagram.com/upyard_rooftop_lounge/" target="_blank"
               rel="noopener">@upyard_rooftop_lounge</a></li>
-          <li><a href="#info">Al Mankhool, Dubai</a></li>
-          <li><a href="#info">Majestic City Retreat Hotel</a></li>
+          <li><a href="#info">Courtyard by Marriott Al Barsha, Dubai</a></li>
         </ul>
       </div>
       <div>
@@ -764,14 +723,14 @@
 
     <div class="footer-bottom">
       <span>© <span id="footerYear"></span> UPYARD Rooftop Lounge · All Rights Reserved · Dubai, UAE</span>
-      <span class="craft">Majestic City Retreat Hotel · 103 Al Mankhool Rd · Al Mankhool</span>
+      <span class="craft">Courtyard by Marriott Al Barsha, Dubai</span>
     </div>
   </footer>
 
   <!-- CKR STUDIOS CREDIT -->
   <div class="ckr-credit">
-    <p>WEBSITE DESIGNED &amp; DEVELOPED BY <span><a href="https://ckr-studios.vercel.app/" target="_blank"
-          rel="noopener">CKR STUDIOS</a></span> &nbsp;·&nbsp; ALL RIGHTS RESERVED</p>
+    <p>WEBSITE DESIGNED &amp; DEVELOPED BY <span><a href="https://www.ckrcreatives.com/" target="_blank"
+          rel="noopener">CKR STUDIOS</a></span></p>
   </div>
 
   <!-- ═══════════════════════════════════════

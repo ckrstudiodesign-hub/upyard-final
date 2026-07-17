@@ -24,7 +24,7 @@
   --font-body: 'Cormorant Garamond', serif;
   --font-accent: 'Playfair Display', serif;
   --nav-h: 76px;
-  --offers-h: 48px;
+  --offers-h: 0px;
   --total-top: calc(var(--nav-h) + var(--offers-h));
 }
 
@@ -2201,7 +2201,7 @@ footer {
 @media (max-width:768px) {
   :root {
     --nav-h: 64px;
-    --offers-h: 38px;
+    --offers-h: 0px;
   }
 
   section {
