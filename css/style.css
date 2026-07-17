@@ -240,12 +240,13 @@ body:has(button:hover) .c-ring {
 
 .nav-links a {
   font-family: var(--font-head);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: normal;
   letter-spacing: 3px;
-  color: var(--muted);
+  color: var(--ivory);
   position: relative;
   padding-bottom: 4px;
-  transition: color 0.25s;
+  transition: color 0.25s, text-shadow 0.25s;
 }
 
 .nav-links a::after {
@@ -263,6 +264,7 @@ body:has(button:hover) .c-ring {
 
 .nav-links a:hover {
   color: var(--gold);
+  text-shadow: 0 0 10px rgba(201, 168, 76, 0.5);
 }
 
 .nav-links a:hover::after {
