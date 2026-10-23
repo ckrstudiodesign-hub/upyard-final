@@ -1,4 +1,4 @@
-# 🍾 TONIC Russian Lounge — Website
+# 🍾 Upyard Rooftop Lounge 
 ### Designed & Developed by CKR STUDIOS
 
 ---
@@ -6,7 +6,7 @@
 ## 📁 FOLDER STRUCTURE
 
 ```
-TONIC-Website/
+Upyard-Website/
 │
 ├── index.html              ← Main HTML file (all content lives here)
 │
