@@ -4,62 +4,173 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Upyard Rooftop Lounge - Menu</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
   <style>
-    body {
-      background-color: #0b0b0b;
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E5C56C;
+      --bg: #080608;
+      --surface: #141214;
+      --ivory: #F2EBD9;
+      --font-head: 'Playfair Display', Georgia, serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      text-align: center;
-      font-family: sans-serif;
     }
-    .menu-container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
+    body {
+      background-color: var(--bg);
+      color: var(--ivory);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
-    .menu-container img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    header {
+      background: rgba(14, 12, 14, 0.95);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
     }
-    .back-btn {
-      display: inline-block;
-      padding: 12px 24px;
-      margin: 20px 0 40px;
-      color: #0b0b0b;
-      background: #c9a84c;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
       text-decoration: none;
-      font-weight: bold;
-      letter-spacing: 1px;
-      border-radius: 4px;
-      transition: background 0.3s;
+      color: var(--ivory);
     }
-    .back-btn:hover {
-      background: #e5c56c;
+    .brand img {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+    }
+    .brand-title {
+      font-family: var(--font-head);
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      color: var(--gold);
+    }
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    .btn-back {
+      background: transparent;
+      border: 1px solid rgba(201, 168, 76, 0.4);
+      color: var(--ivory);
+    }
+    .btn-back:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: rgba(201, 168, 76, 0.08);
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #C9A84C, #A27E2E);
+      color: #080608;
+      border: 1px solid var(--gold);
+      box-shadow: 0 4px 15px rgba(201, 168, 76, 0.25);
+    }
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #E5C56C, #C9A84C);
+      box-shadow: 0 6px 20px rgba(201, 168, 76, 0.4);
+      transform: translateY(-1px);
+    }
+    .viewer-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: calc(100vh - 82px);
+      padding: 12px;
+    }
+    .pdf-frame {
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgba(201, 168, 76, 0.2);
+      border-radius: 8px;
+      background: #111;
+    }
+    .mobile-note {
+      display: none;
+      padding: 12px;
+      text-align: center;
+      background: rgba(201, 168, 76, 0.1);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+      font-size: 0.85rem;
+    }
+    @media (max-width: 768px) {
+      .mobile-note {
+        display: block;
+      }
+      .brand-title {
+        font-size: 1rem;
+      }
+      .btn {
+        padding: 8px 14px;
+        font-size: 0.75rem;
+      }
+      .viewer-wrap {
+        height: calc(100vh - 130px);
+        padding: 6px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="menu-container">
-    <a href="index.html" class="back-btn">← BACK TO HOME</a>
-    
-    <!-- Drinks -->
-    <img src="assets/menu/d1.jpg" alt="Menu Drinks Page 1" loading="lazy">
-    <img src="assets/menu/d2.jpg" alt="Menu Drinks Page 2" loading="lazy">
-    <img src="assets/menu/d3.jpg" alt="Menu Drinks Page 3" loading="lazy">
-    <img src="assets/menu/d4.jpg" alt="Menu Drinks Page 4" loading="lazy">
-    <img src="assets/menu/d5.jpg" alt="Menu Drinks Page 5" loading="lazy">
-    <img src="assets/menu/d6.jpg" alt="Menu Drinks Page 6" loading="lazy">
-    
-    <!-- Food -->
-    <img src="assets/menu/f2.jpg" alt="Menu Food Page 1" loading="lazy">
-    <img src="assets/menu/f3.jpg" alt="Menu Food Page 2" loading="lazy">
-    <img src="assets/menu/f4.jpg" alt="Menu Food Page 3" loading="lazy">
+  <header>
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Upyard Rooftop Lounge">
+      <span class="brand-title">UPYARD MENU</span>
+    </a>
+    <div class="actions">
+      <a href="index.html" class="btn btn-back">← Back to Home</a>
+      <a href="assets/menu/digital%20final%20menu%20upyard%20(1).pdf" target="_blank" rel="noopener" class="btn btn-primary">Open / Download PDF ↗</a>
+      <a href="https://wa.me/971556044187?text=Hello%2C%20I'd%20like%20to%20reserve%20a%20table%20at%20Upyard%20Rooftop%20Lounge." target="_blank" rel="noopener" class="btn btn-back">Reserve Table</a>
+    </div>
+  </header>
 
-    <a href="index.html" class="back-btn">← BACK TO HOME</a>
+  <div class="mobile-note">
+    Best viewed in full screen: <a href="assets/menu/digital%20final%20menu%20upyard%20(1).pdf" target="_blank" rel="noopener" style="color:var(--gold); font-weight:600; text-decoration:underline; margin-left:4px;">Tap here to open PDF directly</a>
   </div>
+
+  <main class="viewer-wrap">
+    <object data="assets/menu/digital%20final%20menu%20upyard%20(1).pdf" type="application/pdf" class="pdf-frame">
+      <iframe src="assets/menu/digital%20final%20menu%20upyard%20(1).pdf" class="pdf-frame" title="Upyard Menu PDF">
+        <p style="text-align:center; padding:40px;">
+          Your browser does not support inline PDFs. 
+          <a href="assets/menu/digital%20final%20menu%20upyard%20(1).pdf" target="_blank" rel="noopener" style="color:var(--gold);">Click here to view or download the menu PDF.</a>
+        </p>
+      </iframe>
+    </object>
+  </main>
 </body>
 </html>
